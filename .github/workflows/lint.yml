@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://json-schema.org/draft-07/schema#
+name: Lint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python runtime
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+
+      - uses: Gr1N/setup-poetry@v7
+
+      - name: Install Dependencies
+        run: |
+          poetry --version
+          poetry install
