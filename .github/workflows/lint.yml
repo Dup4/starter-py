@@ -29,3 +29,7 @@ jobs:
         run: |
           poetry --version
           poetry install
+
+      - name: Lint
+        run: |
+          poetry run flake8 ./**/*.py
