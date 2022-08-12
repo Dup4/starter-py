@@ -30,6 +30,10 @@ jobs:
           poetry --version
           poetry install
 
-      - name: Lint
+      - name: Style format check
         run: |
           poetry run flake8 ./**/*.py
+
+      - name: Static type check
+        run: |
+          poetry run pyright ./**/*.py
