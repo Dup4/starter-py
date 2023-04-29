@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "starter-py"
-version = "0.1.0"
+version = "0.0.1"
 description = "Python3 Starter"
 authors = ["Dup4 <lyuzhi.pan@gmail.com>"]
 license = "MIT"
