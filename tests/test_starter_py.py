@@ -1,5 +1,5 @@
-from starter_py import __version__
+from starter_py import __hello__
 
 
 def test_version():
-    assert __version__ == __version__
+    assert __hello__ == "world"

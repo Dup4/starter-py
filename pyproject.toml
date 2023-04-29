@@ -1,13 +1,14 @@
 [tool.poetry]
-include = ["README.md"]
 name = "starter-py"
-version = { path = "./starter_py/version.py", attr = "__version__" }
+version = "0.0.3"
 description = "Python3 Starter"
-long_description = """
-$(cat README.md)
-"""
+readme = "README.md"
 authors = ["Dup4 <lyuzhi.pan@gmail.com>"]
 license = "MIT"
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
