@@ -1,7 +1,7 @@
 [tool.poetry]
 include = ["README.md"]
 name = "starter-py"
-version = "0.0.1"
+version = { path = "./starter_py/version.py", attr = "__version__" }
 description = "Python3 Starter"
 long_description = """
 $(cat README.md)
