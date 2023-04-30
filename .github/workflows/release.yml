@@ -1,4 +1,4 @@
-name: publish
+name: Release
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  publish-pypi:
+  release-pypi:
     runs-on: ubuntu-latest
 
     steps:
