@@ -1,1 +1,1 @@
-__hello__ = "world"
+__version__ = "0.0.4"
