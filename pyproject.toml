@@ -27,6 +27,7 @@ pyright = "^1.1.266"
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
+# poetry self add poetry-bumpversion
 [[tool.poetry_bumpversion.replacements]]
 files = ["starter_py/__init__.py"]
 search = '__version__ = "{current_version}"'
